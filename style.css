@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #000000, #203a43, #000609);
+    overflow: hidden;
+}
+
+.container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2px;
+}
+
+.calculator {
+    background: #1C1C1C;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid rgba(6, 249, 42, 0.18);
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 2px 0px 50px 0px rgba(1, 5, 52, 0.5);
+}
+
+#expression {
+    width: 100%;
+    height: 100px;
+    background: rgba(176, 176, 176, 0.2);
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.5em;
+    color: #dfdede;
+    resize: none;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#expression::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#expression:focus {
+    outline: none;
+    background: rgba(216, 215, 215, 0.3);
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.2em;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-0.5px);
+}
+
+.btn:active {
+    transform: translateY(0);
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.operator {
+    background: rgba(255, 166, 0, 0.789);
+}
+
+.operator:hover {
+    background: rgba(255, 166, 0, 0.932);
+}
+
+.function {
+    background: rgba(0, 162, 162, 0.901);
+}
+
+.function:hover {
+    background: rgba(1, 199, 199, 0.879);
+}
+
+.constant {
+    background: #5d6678;
+}
+
+.constant:hover {
+    background: #7a869d;
+}
+
+.clear {
+    background: rgba(255, 68, 0, 0.656);
+}
+
+.clear:hover {
+    background: rgba(255, 68, 0, 0.904);
+}
+
+.equals {
+    background: rgba(37, 42, 161, 0.814);
+}
+
+.equals:hover {
+    background: rgba(71, 39, 175, 0.989);
+}
+
+@media (max-width: 600px) {
+    .calculator {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .btn {
+        padding: 12px;
+        font-size: 1em;
+    }
+
+    #expression {
+        font-size: 1.2em;
+        height: 80px;
+    }
+}

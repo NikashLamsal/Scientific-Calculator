@@ -33,7 +33,7 @@ btn.forEach( button => {
         {
             texta.value += lastans;
         }
-        else if(value === "pi")
+        else if(value === "π")
         {
             texta.value += "pi"
         }

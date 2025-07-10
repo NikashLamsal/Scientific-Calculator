@@ -35,6 +35,7 @@ btn.forEach( button => {
         }
         else if(value === "π")
         {
+           // const π = "pi"
             texta.value += "pi"
         }
         else if(value === "sqrt" )
@@ -45,6 +46,19 @@ btn.forEach( button => {
         {
             texta.value += "log10("
         }
+        else if (value === "sin")
+        {
+            texta.value += "sin("
+        }
+        else if (value === "cos")
+        {
+            texta.value += "cos("
+        }
+        else if (value === "tan")
+        {
+            texta.value += "tan("
+        }
+        
         else
         {
             texta.value += value;
